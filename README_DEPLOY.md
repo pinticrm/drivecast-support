@@ -42,6 +42,7 @@ https://pinticrm.github.io/drivecast-support/privacy.html
 ## İletişim
 Şu an sayfada:
 Bahadır Düzgün
-bahadiur@icloud.com
+bahadir@dzgn.com.tr
++90 546 578 48 47
 
 kullanıldı. Yayınlamadan önce farklı bir public support e-postası istiyorsan değiştir.
