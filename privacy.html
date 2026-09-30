@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="DriveCast: Car TV gizlilik politikası.">
+  <title>DriveCast Gizlilik Politikası</title>
+  <style>
+:root {
+  --bg: #07101f;
+  --panel: #0d1830;
+  --panel2: #101f3e;
+  --text: #f7f9ff;
+  --muted: #aab6d3;
+  --blue: #4a84ff;
+  --blue2: #71a5ff;
+  --line: rgba(255,255,255,.10);
+  --good: #63d59a;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  background:
+    radial-gradient(circle at 85% -10%, rgba(65,116,255,.28), transparent 34%),
+    linear-gradient(180deg, #07101f 0%, #08111f 100%);
+  color: var(--text);
+  line-height: 1.55;
+}
+a { color: var(--blue2); }
+.wrap { width: min(1040px, calc(100% - 32px)); margin: 0 auto; }
+header {
+  position: sticky; top: 0; z-index: 10;
+  backdrop-filter: blur(18px);
+  background: rgba(7,16,31,.78);
+  border-bottom: 1px solid var(--line);
+}
+.nav {
+  min-height: 68px;
+  display: flex; align-items: center; justify-content: space-between; gap: 20px;
+}
+.brand { display:flex; align-items:center; gap:12px; font-weight:800; letter-spacing:-.02em; }
+.logo {
+  width: 38px; height: 38px; border-radius: 11px;
+  display:grid; place-items:center;
+  background: linear-gradient(145deg, #4b87ff, #1b4fce);
+  box-shadow: 0 10px 30px rgba(39,99,232,.3);
+  font-size: 20px;
+}
+.navlinks { display:flex; gap:18px; flex-wrap:wrap; }
+.navlinks a { color: var(--muted); text-decoration:none; font-size:14px; font-weight:600; }
+.hero { padding: 86px 0 54px; }
+.eyebrow {
+  display:inline-flex; gap:8px; align-items:center;
+  color:#cdddff; background:rgba(74,132,255,.13);
+  border:1px solid rgba(103,158,255,.25);
+  padding:7px 11px; border-radius:999px; font-size:13px; font-weight:700;
+}
+h1 {
+  margin: 20px 0 14px; max-width:760px;
+  font-size: clamp(42px, 7vw, 72px); line-height:.98; letter-spacing:-.05em;
+}
+.hero p { max-width:730px; font-size:18px; color:var(--muted); margin:0; }
+.actions { display:flex; flex-wrap:wrap; gap:12px; margin-top:28px; }
+.btn {
+  display:inline-flex; align-items:center; justify-content:center;
+  min-height:48px; padding:0 18px; border-radius:14px;
+  font-weight:750; text-decoration:none;
+  border:1px solid var(--line);
+}
+.btn.primary { background:var(--blue); color:white; border-color:transparent; }
+.btn.secondary { color:var(--text); background:rgba(255,255,255,.05); }
+section { padding: 30px 0; }
+.section-title { font-size:30px; letter-spacing:-.03em; margin:0 0 16px; }
+.grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; }
+.card {
+  background:linear-gradient(180deg, rgba(16,31,62,.88), rgba(12,24,47,.88));
+  border:1px solid var(--line);
+  border-radius:20px; padding:22px;
+}
+.card h3 { margin:0 0 7px; font-size:18px; }
+.card p { margin:0; color:var(--muted); }
+.faq details {
+  border:1px solid var(--line); border-radius:16px;
+  background:rgba(255,255,255,.035);
+  padding:17px 18px; margin:10px 0;
+}
+.faq summary { cursor:pointer; font-weight:750; }
+.faq details p { color:var(--muted); margin:12px 0 0; }
+.contact {
+  display:grid; grid-template-columns:1.3fr .7fr; gap:14px;
+}
+.contact-box {
+  background:linear-gradient(145deg, #16326b, #0d1d39);
+  border:1px solid rgba(113,165,255,.25); border-radius:22px; padding:24px;
+}
+.meta { color:var(--muted); font-size:14px; }
+.pill {
+  display:inline-block; padding:5px 10px; margin:4px 4px 0 0;
+  border-radius:999px; background:rgba(99,213,154,.09);
+  border:1px solid rgba(99,213,154,.22); color:#a7f0ca; font-size:12px; font-weight:700;
+}
+footer { padding:44px 0 54px; color:var(--muted); font-size:14px; }
+footer .row { border-top:1px solid var(--line); padding-top:20px; display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap; }
+.article { max-width:820px; padding:64px 0; }
+.article h1 { font-size:48px; line-height:1.04; }
+.article h2 { margin-top:34px; font-size:24px; }
+.article p, .article li { color:var(--muted); }
+.notice {
+  background:rgba(74,132,255,.09);
+  border:1px solid rgba(74,132,255,.20);
+  padding:16px 18px; border-radius:16px; color:#d8e5ff;
+}
+@media (max-width: 720px) {
+  .nav { align-items:flex-start; padding:14px 0; flex-direction:column; }
+  .navlinks { gap:12px; }
+  .hero { padding-top:58px; }
+  .grid, .contact { grid-template-columns:1fr; }
+  .article h1 { font-size:40px; }
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <div class="brand"><div class="logo">▶</div><span>DriveCast: Car TV</span></div>
+    <nav class="navlinks">
+      <a href="index.html">Destek</a>
+      <a href="privacy.html">Gizlilik</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap article">
+  <span class="eyebrow">Son güncelleme: 30 Eylül 2026</span>
+  <h1>Gizlilik Politikası</h1>
+
+  <p class="notice">DriveCast, kullanıcı hesabı oluşturmanızı gerektirmez. Uygulamanın temel işlevleri cihazınızdaki yerel ayarlar ve Apple'ın sistem servisleri üzerinden çalışır.</p>
+
+  <h2>1. DriveCast hangi verileri kullanır?</h2>
+  <p>DriveCast; eklediğiniz M3U kaynakları, favoriler, uygulama tercihleri, kayıtlı araç bilgileri ve benzeri uygulama ayarlarını işlevleri sunmak amacıyla cihaz üzerinde saklayabilir.</p>
+
+  <h2>2. Konum</h2>
+  <p>Konum izni; hız ölçümü, sürüş metrikleri, mini harita ve konum tabanlı özellikler için kullanılır. DriveCast bu izni yalnız ilgili özellikler için kullanır. Konum iznini iOS Ayarlar üzerinden istediğiniz zaman değiştirebilirsiniz.</p>
+
+  <h2>3. Kamera</h2>
+  <p>Kamera erişimi yalnız QR kod ile M3U kaynağı ekleme gibi kullanıcı tarafından başlatılan özellikler için kullanılır. DriveCast kamerayı arka planda sürekli kaydetmek için kullanmaz.</p>
+
+  <h2>4. Satın almalar</h2>
+  <p>DriveCast Pro satın alımları Apple StoreKit üzerinden gerçekleştirilir. Ödeme kartı veya Apple ID ödeme bilgilerinizi DriveCast doğrudan işlemez. Satın alma durumu, uygulamada Pro erişimini doğrulamak amacıyla StoreKit üzerinden kontrol edilebilir.</p>
+
+  <h2>5. Medya kaynakları</h2>
+  <p>DriveCast, kullanıcının eklediği medya kaynaklarını oynatır. Kaynak sunucularına yapılan bağlantılar ilgili medya sağlayıcısının sistemlerine gider ve bu sağlayıcıların kendi gizlilik politikaları geçerli olabilir.</p>
+
+  <h2>6. Ekran paylaşımı ve sistem servisleri</h2>
+  <p>Ekran paylaşımı, harita, AirPlay ve benzeri özellikler Apple'ın veya seçtiğiniz üçüncü taraf sistem servislerinin sağladığı API'leri kullanabilir. Bu servisler kendi koşulları ve gizlilik politikalarına tabidir.</p>
+
+  <h2>7. Reklam ve takip</h2>
+  <p>DriveCast bu sürümde kullanıcıları üçüncü taraf reklam amaçlı izlemek üzere tasarlanmış bir reklam SDK'sı kullanmaz.</p>
+
+  <h2>8. Çocukların gizliliği</h2>
+  <p>DriveCast özellikle çocuklara yönelik bir hizmet değildir. Uygulamanın kullanımı, App Store yaş derecelendirmesi ve geçerli yerel kurallara tabidir.</p>
+
+  <h2>9. Güvenlik</h2>
+  <p>Cihazda tutulan verilerin güvenliği iOS'un uygulama sandbox'ı ve sistem güvenlik mekanizmalarından yararlanır. İnternet üzerinden erişilen harici medya kaynaklarının güvenliği DriveCast'in kontrolü dışında olabilir.</p>
+
+  <h2>10. Değişiklikler</h2>
+  <p>Uygulamanın işlevleri veya yasal gereksinimler değişirse bu politika güncellenebilir. Güncel sürüm her zaman bu sayfada yayımlanır.</p>
+
+  <h2>11. İletişim</h2>
+  <p>Gizlilik veya DriveCast hakkında sorularınız için:</p>
+  <p><strong>Bahadır Düzgün</strong><br>
+  E-posta: <a href="mailto:bahadiur@icloud.com">bahadiur@icloud.com</a></p>
+
+  <div class="actions">
+    <a class="btn secondary" href="index.html">Destek Merkezine Dön</a>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap row">
+    <span>© 2026 Bahadır Düzgün. DriveCast: Car TV.</span>
+    <span><a href="index.html">Destek</a></span>
+  </div>
+</footer>
+</body>
+</html>
